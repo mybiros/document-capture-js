@@ -5,9 +5,25 @@
     padding: 0;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #327d7d;
+    min-height: 100vh;
+    
+}
+
 .d-none{
     display: none !important;
 }
+
+/* #acquisition-root-component{
+
+    width: 40rem;
+    height: 40rem;
+
+} */
 
 
 #acquisition-active-camera-container{
@@ -155,6 +171,10 @@
     height: auto;
 }
 
+#acquisition-doc-preview[src=""]{
+    display: none;
+}
+
 .loader {
     border: 3rem solid #f3f3f3;
     border-radius: 50%;
@@ -229,5 +249,14 @@
     }
     
 }
+
+/* This will be removed after demo */
+#notification-error-container{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-family: Oswald, sans-serif;
+}
+
 
 
