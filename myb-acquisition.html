@@ -63,8 +63,8 @@
         myBAcqProcess.start();
     }
 
-    function onSendCapturedData(upload_image, documentSide) {
-        fetch("Your BackEnd url to upload document", {
+    async function onSendCapturedData(upload_image, documentSide) {
+        await fetch("Your BackEnd url to upload document", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",
